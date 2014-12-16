@@ -1,4 +1,4 @@
-# ToffeeScript, a Game-Changer for Node.js callbacks
+# ToffeeScript, a Game-Changer for Node.js Callbacks
 
 The following article does a good job of explaining "callback hell" in Node.js:
 
@@ -15,7 +15,7 @@ In other words, they all follow the same basic set of rules in terms of syntax.
 So, first here are some of the many examples of approaches that follow the rules:
 
 ``` javascript
-# callbacks
+// callbacks
 
 var path = require('path')
  
@@ -52,7 +52,7 @@ module.exports = function (dir, cb) {
 
 
 ``` javascript
-# modular
+// modular
 
 function getStats (paths, cb) {
   var counter = paths.length
@@ -102,7 +102,7 @@ module.exports = function (dir, cb) {
 ```
 
 ``` javascript
-# using async module
+// using async module
 
 var fs = require('fs')
 var async = require('async')
@@ -135,7 +135,7 @@ module.exports = function (dir, cb) {
 ```
 
 ``` javascript
-# promises
+// promises
 var fs = require('fs')
 var path = require('path')
 var Q = require('q')
@@ -167,7 +167,7 @@ module.exports = function (dir) {
 ```
 
 ``` javascript
-# generators
+// generators
 
 o = require('co')
 var thunkify = require('thunkify')
